@@ -5,9 +5,7 @@
 // Do not worry about negative bases and exponents.
 
 function power(num, pow) {
-  if (pow === 0) return 1;
-
-  return num * power(num, pow - 1);
+  return;
 }
 
 console.log(power(2, 0)); // 1

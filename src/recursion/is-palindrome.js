@@ -4,12 +4,8 @@
 // Otherwise it returns false.
 
 function isPalindrome(str) {
-  if (!str.length) return true;
-
-  if (str[0] !== str[str.length - 1]) return false;
-
-  return isPalindrome(str.slice(1, -1));
+  return;
 }
 
-console.log(isPalindrome('amanaplanacanalpanama')); // true
-console.log(isPalindrome('amanaplanacanalpandemonium')); // false
+console.log(isPalindrome("amanaplanacanalpanama")); // true
+console.log(isPalindrome("amanaplanacanalpandemonium")); // false

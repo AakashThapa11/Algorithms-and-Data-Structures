@@ -4,29 +4,8 @@
 // Recursion would be a great way to solve this!
 
 function stringifyNumbers(obj) {
-  const newObj = Object.assign({}, obj);
-
-  for (const key in newObj) {
-    if (Object.prototype.hasOwnProperty.call(newObj, key)) {
-      if (typeof newObj[key] === 'number') newObj[key] = newObj[key].toString();
-      if (typeof newObj[key] === 'object') newObj[key] = stringifyNumbers(newObj[key]);
-    }
-  }
-
-  return newObj;
+  return;
 }
-
-const obj = {
-  num: 1,
-  test: [],
-  data: {
-    val: 4,
-    info: {
-      isRight: true,
-      random: 66
-    }
-  }
-};
 
 console.log(stringifyNumbers(obj));
 // { num: '1',

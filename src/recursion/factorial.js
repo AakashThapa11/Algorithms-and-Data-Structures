@@ -5,9 +5,7 @@
 // factorial zero (0!) is always 1.
 
 function factorial(num) {
-  if (num <= 1) return 1;
-
-  return num * factorial(num - 1);
+  return;
 }
 
 console.log(factorial(1)); // 1
